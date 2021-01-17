@@ -1,0 +1,86 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+html, body { width: 100%; height: 100%;}
+
+#main-container {
+    display: flex;
+    height: 100%;
+}
+
+#view-container {
+    position: relative;
+    flex: auto;
+    min-width: 640px;
+    min-height: 480px;
+    overflow:visible;
+}
+
+#controls {
+    font-size: 12px;
+    font-family: Arial,sans-serif;
+    background: rgb(212, 212, 212);
+    min-width: 300px;
+    color: black;
+}
+
+#controls .title {
+    font-size: 115%;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 0;
+}
+
+#controls .disabled {
+    color: rgb(180,180,180);
+}
+
+.control-row {
+    display: flex;
+    padding: 2px 0;
+}
+
+.radio-style label {
+    margin-left: 8px;
+    margin-right: 15px;
+}
+
+.control-row .fill {
+    flex: auto;
+    padding-left: 20px;
+}
+
+.control-row-vertical {
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.control-row .slider-num {
+    margin-left: 10px;
+    min-width: 50px;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+.input-group {
+    border-bottom: rgb(148, 146, 146) solid 1px;
+    padding: 8px 10px;
+}
+
+.slider-control {
+    display:flex;
+    margin-right: 5px;
+}
+
+.slider-control > input[type=range] {
+    flex: 1;
+    margin-right: 8px;
+    margin-left: 5px;
+}
+

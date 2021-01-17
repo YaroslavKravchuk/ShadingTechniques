@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div id="main-container">
+            <div id="view-container">
+                <canvas id="gl-canvas">
+                    Oops ... your browser doesn't support the HTML5 canvas element
+                </canvas>
+            </div>
+
+            <div id="controls">
+                <div class="title">Phong Shader</div>
+                <div id="main-group" class="input-group"></div>
+                <div class="input-group">
+                    <ul>
+                        <li><a href="microfacet.html">Microfacet</a></li>
+                        <li><a href="normal.html">Normal Map</a></li>
+                        <li><a href="environment.html">Environment Map</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Load the main script module -->
+        <script type="module" src="js/main-phong.js"></script>
+    </body>
+</html>
